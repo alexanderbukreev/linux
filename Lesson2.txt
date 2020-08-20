@@ -1,0 +1,15 @@
+1. cat - вывод stdin в stdout
+cat > 1.txt
+cat > 2.txt
+cat 1.txt 2.txt > 3.txt
+cat 3.txt
+cat 3.txt > 4.txt
+
+2. find ~/ -maxdepth 1 -name ".*" -type f | wc -l
+
+3.1 curl -o ./flasapp.py https://raw.githubusercontent.com/mtuktarov/linux_goodies/master/docker/python/uwsgi/flaskapp.py
+3.2 chmod +x ./flasapp.py
+3.3 + 3.4 sudo apt install python3 && sudo apt install pip3 && sudo pip3 install flask
+3.5 Переменные окружения: FLASK_HOST = хост. FLASK_PORT - порт. ip a смотрим текущий ip, далее export FLASK_HOST=192.168.1.40.
+3.6 Можно поменять PATH через export, дописав туда путь до flaskapp.py, можно в .bashrc добавить alias: flaskapp=~./flaskapp.py
+
